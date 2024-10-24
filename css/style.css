@@ -13,24 +13,24 @@ body {
 .header{
     background: #0093a4;
     width: 100%;
-    height: 11VH;
+    height: 9VH;
     margin:0;
     justify-content: space-between;
 
 }
 .logo{
-    width: 4%;
+    width: 3%;
     margin-left: .5%;
     margin-top: .5%;
 }
 .headeritems{
-    margin-left: 5.5%;
+    margin-left: 4.5%;
     margin-top: -3%;
 }
 .headeritems .home-ul .home-li{
     list-style: none;
     display:inline-block;
-    margin: 0 20px;
+    margin: 0 11px;
 }
 .headeritems .home-ul .home-li a{
     text-decoration: none;
@@ -38,7 +38,7 @@ body {
 }
 
 .home-li  :hover{
-    font-size: 25px;
+    font-size: 18px;
 }
 .menu {
     position: relative;
@@ -46,16 +46,15 @@ body {
     display: flex;
     margin-right: 90%;
     margin-left: 60%;
-    margin-top: -35px;
+    margin-top: -28px;
 }
 
 .menu-btn {
-    background-color:#0f0e0e;
+    background: #0093a4;
     color: white;
-    border: none;
     padding: 5px 40px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 15px;
     border-radius: 4px;
    
 }
@@ -77,12 +76,12 @@ body {
    
 }
 
-.menu:hover .dropdown {
+.menu:active .dropdown {
     display: block;
 }
 
 .dropdown li {
-    padding: 10px;
+    padding: 13px;
     text-align: left;
     display: flex;
     align-items: center;
@@ -90,12 +89,12 @@ body {
 }
 
 .dropdown li img {
-    width: 24px;
-    height: 24px;
+    width: 56px;
+    height: 49px;
     margin-right: 10px;
 }
 
-.dropdown li:hover {
+.dropdown li:active {
     background-color: #f1f1f1;
 }
 
@@ -110,38 +109,33 @@ body {
     display: flex;
     margin-left: 72%;
     margin-top: -44px;
-    font-size: 27px;
+    font-size: 19px;
+    background: #0093a4;
+    padding:10px  20px 15px 25px  ;
     border-radius: 6px;
-
-
 }
 .sin-boutton a{
     text-decoration: none;
-    color: #000000;
-    text-align:90px;
-}
-.sin-boutton:hover{
-    background: #438e97;
+    color: #ffff;
+    border-color: #ececec;
 }
 .create_account-boutton{
     width: 128px;
     height: 44px;
     display: flex;
     margin-left: 82%;
+    background: #ffffff;
     margin-top: -44px;
-    font-size: 18px;
+    padding:10px  5px 15px 15px  ;
+    font-size: 15px;
     border-radius: 6px;
 }
 .create_account-boutton a{
     text-decoration: none;
-    color: #000000;
-    text-align:90px;
-}
-.create_account-boutton:hover{
-    background: #438e97;
+    color:#0093a4;
 }
 .qoustion_icon{
-    background: #ffff;
+   
     border-radius: 10px;
     width: 30px;
     height: 30px;
@@ -149,7 +143,6 @@ body {
     margin-left: 93%;
     margin-top: -34px;
 }
-
 .body-section{
     background: linear-gradient(120deg,rgb(44, 91, 92),rgb(228, 225, 223),rgb(24, 112, 112)) ;
     width: 100%;
@@ -180,19 +173,18 @@ body {
     width: 14%;
     height: 8%;
     display: flex;
-    text-align: center;
-    align-items: center;
+    padding: 10px 9px 10px 10px ;
     margin-left: -76%;
     margin-top: 24%;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 500;
     color: #ffff;
     background: #292f36;
-    border-radius:10px 10px 10px 10px ;
+    border-radius:9px ;
 
 }
 .fa-solid{
-    margin-left: 30%;
+    margin-left: 15%;
     color: #ffff;
 }
 .body-btn:hover{
@@ -364,8 +356,8 @@ body {
     font-size: 1.25rem;
     line-height: 1.33;
     width: 100%;
-    font-weight: 700;
-    background-color: rgb(213, 236, 236);
+    font-weight: 600;
+    background-color: rgb(0, 205, 205);
     color: #ffff;
 }
 
@@ -377,14 +369,15 @@ body {
 .body_therdsection{
     background:orange;
     width: 100%;
-    height: 60px;
+    height: 50px;
 }
  .body_therdtextsection{
     color: #ffff;
     font-size: 27px;
     display: flex;
     margin-left: 28%;
-    margin-top: -40px;
+    margin-top: -49px;
+    padding: 10px 0px 0px 0px;
  }
  
  .body_therdimagesection2{
@@ -394,8 +387,8 @@ body {
  }
  .body_therd-text-section1{
     margin-top: 5%;
-    margin-left: 38%;
-    font-size: 38px;
+    margin-left: 42%;
+    font-size: 28px;
 }
 .body_therd-text-section2{
     font-size: 15px;
@@ -405,8 +398,11 @@ body {
 .body_therd-buton-section{
     margin-top: 3%;
     margin-left: 46%;
-    font-size: 28px;
-    border-radius: 8px;
+    font-size: 21px;
+    border-radius: 6px;
+    padding: 10px 10px 10px 10px ;
+    color: #ffff;
+    cursor: pointer;
     background-color:#581185;
 }
 .body_therd-link-section{
@@ -420,56 +416,34 @@ body {
     background:#292f36;
 }
 .footer-section a{
+    padding: 30px 0px 0px 0px ;
     color: #be440c;
-    margin-top: 10%;
 }
 .footer-section h4{
+    padding: 30px 0px 0px 0px ;
     color: #c9c9c9;
     margin-left: 12%;
-    margin-top: 10%;
 }
 .footer-condent{
     margin-bottom: 10%;
 }
 .footer-img_section{
     width: 17%;
+    margin-top:1% ;
     margin-left: 12% ;
 }
 .footer-dropdown{
-    width: 15rem;
-    height: 10rem;
-    margin-top: -60px;
-    margin-left: 77%;
-    position: relative;
-
+    margin-top: -175px;
+    margin-left: 80%;
 }
-.footer-dropdown:hover .dropdown-list{
-    opacity: 1;
-    visibility: visible;
+select{
+    width:160px;
 }
-.dropdown-selecte {
-padding: 1.5rem;
-border-radius: 4px;
-background: #f1f1f1;
-width: 100%;
-display: flex;
-align-items: center;
-justify-content: space-between;
-font-size: 1.6rem;
-cursor: pointer;
-}
-.dropdown-list{
-    border-radius: 4px;
-    background: #f1f1f1;
-    position: absolute;
-    top:40%;
-    left: 0;
-    right: 0;
-    opacity: 0;
-    visibility: hidden;
-    transition:opacity 0.2s linear,visiblity 0.2s linear;
-
+.fa-brands{
+    color: #ffff;
+    padding: 0px 30px 35px 0px;
+    margin-top: 2%;
 }
 .iconsfooter{
-    margin-left: 620px;
+    margin-left: 1014px;
 }
