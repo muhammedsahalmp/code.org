@@ -13,50 +13,63 @@ body {
 .header{
     background: #0093a4;
     width: 100%;
-    height: 9VH;
-    margin:0;
-    justify-content: space-between;
-
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 0 24px;
+    box-sizing: border-box;
 }
 .logo{
-    width: 3%;
-    margin-left: .5%;
-    margin-top: .5%;
+    width: 32px;
+    height: 32px;
 }
 .headeritems{
-    margin-left: 4.5%;
-    margin-top: -3%;
+    margin-left: 24px;
+}
+.headeritems .home-ul {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 .headeritems .home-ul .home-li{
     list-style: none;
-    display:inline-block;
-    margin: 0 11px;
+    margin: 0 8px;
 }
 .headeritems .home-ul .home-li a{
     text-decoration: none;
-    color:#ffff;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: none;
+    padding: 8px 4px;
 }
-
 .home-li  :hover{
-    font-size: 18px;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
 }
 .menu {
+    margin-left: auto;
     position: relative;
-    display: inline-block;
-    display: flex;
-    margin-right: 90%;
-    margin-left: 60%;
-    margin-top: -28px;
 }
 
 .menu-btn {
-    background: #0093a4;
+    background: transparent;
     color: white;
-    padding: 5px 40px;
-    cursor: pointer;
+    border: 3px solid rgba(255, 255, 255, 0.8);
+    padding: 8px 12px;
     font-size: 15px;
     border-radius: 4px;
-   
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.menu-btn::after {
+    font-size: 14px;
+    margin-left: 4px;
 }
 
 .menu-btn:hover {
@@ -104,15 +117,16 @@ body {
     display: block;
 }
 .sin-boutton{
-    width: 114px;
-    height: 46px;
-    display: flex;
-    margin-left: 72%;
-    margin-top: -44px;
-    font-size: 19px;
-    background: #0093a4;
-    padding:10px  20px 15px 25px  ;
-    border-radius: 6px;
+    border: 3px solid rgba(255, 255, 255, 0.8);
+    background: transparent;
+    color: white;
+    padding:8px 16px;
+    margin: 0 8px;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+    margin-right: 0px;
 }
 .sin-boutton a{
     text-decoration: none;
@@ -120,28 +134,45 @@ body {
     border-color: #ececec;
 }
 .create_account-boutton{
-    width: 128px;
-    height: 44px;
-    display: flex;
-    margin-left: 82%;
-    background: #ffffff;
-    margin-top: -44px;
-    padding:10px  5px 15px 15px  ;
-    font-size: 15px;
-    border-radius: 6px;
+    background: white;
+    border: none;
+    padding: 11.px 16px;
+    margin: 0 8px ;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
 }
 .create_account-boutton a{
     text-decoration: none;
-    color:#0093a4;
+    color: #0093a4;
+    width: 112px;
+    background: transparent;
+    color: #0093a4;
+    border: 3px solid rgba(255, 255, 255, 0.8);
+    padding: 7px 4px;
+    font-size: 16px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 75px;
+    cursor: pointer;
+
 }
 .qoustion_icon{
-   
-    border-radius: 10px;
-    width: 30px;
-    height: 30px;
-    padding: 0px 0px 0px 0px ;
-    margin-left: 93%;
-    margin-top: -34px;
+    width: 26px;
+    height: 26px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0px  ;
+    cursor: pointer;
+}
+.qoustion_icon i{
+    color: #0093a4;
+    font-size: 16px;
 }
 .body-section{
     background: linear-gradient(120deg,rgb(44, 91, 92),rgb(228, 225, 223),rgb(24, 112, 112)) ;
@@ -411,39 +442,100 @@ body {
 }
 .footer-section{
     width: 100%;
-    height: 40vh;
-    margin-top: 6%;
-    background:#292f36;
-}
-.footer-section a{
-    padding: 30px 0px 0px 0px ;
-    color: #be440c;
-}
-.footer-section h4{
-    padding: 30px 0px 0px 0px ;
-    color: #c9c9c9;
-    margin-left: 12%;
+    background: #292f36;
+    padding: 30px 0;
+    margin-top: 60px;
 }
 .footer-condent{
-    margin-bottom: 10%;
+    width: 75%;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    text-align: center;
 }
-.footer-img_section{
-    width: 17%;
-    margin-top:1% ;
-    margin-left: 12% ;
+
+/* Footer links and text */
+.footer-condent h4 {
+    margin-top: -8px;
+    font-size: 13px;
+    line-height: 1.8;
+    font-weight: normal;
+    color: #c9c9c9;
+    text-align: left;
+    margin-left: -3%;
 }
-.footer-dropdown{
-    margin-top: -175px;
-    margin-left: 80%;
+
+.footer-condent h4 a {
+    color: #be440c;
+    text-decoration: none;
+    padding: 0 4px;
 }
-select{
-    width:160px;
+
+.footer-condent h4 a:hover {
+    text-decoration: underline;
 }
-.fa-brands{
+
+/* Separator styling */
+.footer-condent h4 span.separator {
+    color: #666;
+    margin: 0 8px;
+}
+
+/* AWS logo styling */
+.footer-img_section {
+    width: 180px;
+    height: auto;
+    margin-top: 7px;
+    margin-left: -87%;
+    opacity: 0.9;
+}
+
+/* Social icons container */
+.iconsfooter {
+    position: absolute;
+    right: 26px;
+    top: 41px;
+    display: flex;
+    gap: 27px;
     color: #ffff;
-    padding: 0px 30px 35px 0px;
-    margin-top: 2%;
 }
-.iconsfooter{
-    margin-left: 1014px;
+
+.fa-brands {
+    color: #fff;
+    font-size: 18px;
+    opacity: 0.7;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.fa-brands:hover {
+    opacity: 1;
+}
+
+/* Language dropdown */
+.footer-dropdown {
+    position: absolute;
+    right: 20px;
+    top: 0;
+}
+
+select {
+    width: 160px;
+    padding: 8px 10px;
+    border: 1px solid #666;
+    background: #292f36;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 13px;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.4-12.8z%22%2F%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+}
+
+select:hover {
+    border-color: #888;
 }
