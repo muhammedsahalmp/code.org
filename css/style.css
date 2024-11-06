@@ -137,7 +137,7 @@ body {
     background: white;
     border: none;
     padding: 11.px 16px;
-    margin: 0 8px;
+    margin: 0 8px ;
     border-radius: 4px;
     font-size: 14px;
     font-weight: 400;
@@ -167,7 +167,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 0px;
+    margin-left: 0px  ;
     cursor: pointer;
 }
 .qoustion_icon i{
@@ -493,10 +493,10 @@ body {
 /* Social icons container */
 .iconsfooter {
     position: absolute;
-    right: 41px;
+    right: 26px;
     top: 41px;
     display: flex;
-    gap: 20px;
+    gap: 27px;
     color: #ffff;
 }
 
